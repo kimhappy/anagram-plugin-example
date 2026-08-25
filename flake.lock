@@ -1,0 +1,217 @@
+{
+  "nodes": {
+    "darkglass-lv2-extensions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1776932933,
+        "narHash": "sha256-tAgHCPEdRBjEW//nj4tiNE2zL74xe5/aWrrZ169cgJM=",
+        "owner": "Darkglass-Electronics",
+        "repo": "LV2-Extensions",
+        "rev": "6d34a7111d49a260d2ad2e2fa83d48d3db2c670b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Darkglass-Electronics",
+        "repo": "LV2-Extensions",
+        "rev": "6d34a7111d49a260d2ad2e2fa83d48d3db2c670b",
+        "type": "github"
+      }
+    },
+    "dpf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1761206543,
+        "narHash": "sha256-7xuxcT6W8vhJY91WPPqnGNkzX4PZKkm60bpNMGZrE1E=",
+        "owner": "DISTRHO",
+        "repo": "DPF",
+        "rev": "4238e1c7f0351bbe488d79f0899c540543ac7583",
+        "type": "github"
+      },
+      "original": {
+        "owner": "DISTRHO",
+        "repo": "DPF",
+        "rev": "4238e1c7f0351bbe488d79f0899c540543ac7583",
+        "type": "github"
+      }
+    },
+    "flake-utils": {
+      "inputs": {
+        "systems": "systems"
+      },
+      "locked": {
+        "lastModified": 1731533236,
+        "narHash": "sha256-l0KFg5HjrsfsO/JpG+r7fRrqm12kzFHyUHqHCVpMMbI=",
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "rev": "11707dc2f618dd54ca8739b309ec4fc024de578b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "flake-utils",
+        "type": "github"
+      }
+    },
+    "gcc9": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1653636938,
+        "narHash": "sha256-vvEQLeTmotAL/RWKNFZCZNKJOSuZDKEpPLHMSaXldCM=",
+        "type": "tarball",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-9.5.0/gcc-9.5.0.tar.xz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://ftp.gnu.org/gnu/gcc/gcc-9.5.0/gcc-9.5.0.tar.xz"
+      }
+    },
+    "kxstudio-lv2-extensions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1750144273,
+        "narHash": "sha256-SebKgRcO50eawkNQWe1Kz+Czh+Ae2O9SCKJsIv3wxJs=",
+        "owner": "KXStudio",
+        "repo": "LV2-Extensions",
+        "rev": "8b5f6cb9cd75e300958c9aacac253d44c964e80b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "KXStudio",
+        "repo": "LV2-Extensions",
+        "rev": "8b5f6cb9cd75e300958c9aacac253d44c964e80b",
+        "type": "github"
+      }
+    },
+    "libmodla": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1736415911,
+        "narHash": "sha256-+mu95xOYDHmIJin7/sx6s6F0r6HKUcZnLpBNcLo5cIs=",
+        "type": "tarball",
+        "url": "https://download.mod.audio/shared/libmodla-v1.3.1-pablito.tar.gz"
+      },
+      "original": {
+        "type": "tarball",
+        "url": "https://download.mod.audio/shared/libmodla-v1.3.1-pablito.tar.gz"
+      }
+    },
+    "mod-lv2-extensions": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1688558442,
+        "narHash": "sha256-gQuCbfjFv1gauRgX8lpFUn2E1NdtRssbbZoRVlzvlWo=",
+        "owner": "mod-audio",
+        "repo": "mod-lv2-extensions",
+        "rev": "f4341a6c2b2f50e2eb405b06ce19f9f0b4b1a62b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "mod-audio",
+        "repo": "mod-lv2-extensions",
+        "rev": "f4341a6c2b2f50e2eb405b06ce19f9f0b4b1a62b",
+        "type": "github"
+      }
+    },
+    "nixpkgs-22": {
+      "locked": {
+        "lastModified": 1685573264,
+        "narHash": "sha256-Zffu01pONhs/pqH07cjlF10NnMDLok8ix5Uk4rhOnZQ=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "380be19fbd2d9079f677978361792cb25e8a3635",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-22.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs-unstable": {
+      "locked": {
+        "lastModified": 1786599213,
+        "narHash": "sha256-yNJd40f11EzXBjSByCB7IPpeFFAdeoSKKM67dGkfFoU=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "0e251e24a4f24e036a084b6b4b2d2491af4167f4",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "range-v3": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1776030450,
+        "narHash": "sha256-WlDmF8h3L2s5gmmDj/adf7TbofaAQTfoYZ/wUDSfyFk=",
+        "owner": "ericniebler",
+        "repo": "range-v3",
+        "rev": "108f93c279c8f9cec175dac361084983d0176e99",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ericniebler",
+        "repo": "range-v3",
+        "rev": "108f93c279c8f9cec175dac361084983d0176e99",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "darkglass-lv2-extensions": "darkglass-lv2-extensions",
+        "dpf": "dpf",
+        "flake-utils": "flake-utils",
+        "gcc9": "gcc9",
+        "kxstudio-lv2-extensions": "kxstudio-lv2-extensions",
+        "libmodla": "libmodla",
+        "mod-lv2-extensions": "mod-lv2-extensions",
+        "nixpkgs-22": "nixpkgs-22",
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "range-v3": "range-v3",
+        "treefmt-nix": "treefmt-nix"
+      }
+    },
+    "systems": {
+      "locked": {
+        "lastModified": 1681028828,
+        "narHash": "sha256-Vy1rq5AaRuLzOxct8nz4T6wlgyUR7zLU309k9mBC768=",
+        "owner": "nix-systems",
+        "repo": "default",
+        "rev": "da67096a3b9bf56a91d16901293e51ba5b49a27e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-systems",
+        "repo": "default",
+        "type": "github"
+      }
+    },
+    "treefmt-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs-unstable"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785945821,
+        "narHash": "sha256-NLSyTCW4K4ofhNBllt3omPasm6QpralXH1DBZOc91Dw=",
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "rev": "ae7910970dddc408fe6ab1c8e4b277bb21d72dc0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "numtide",
+        "repo": "treefmt-nix",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}

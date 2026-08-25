@@ -1,0 +1,13 @@
+--- a/distrho/src/DistrhoPluginLV2export.cpp
++++ b/distrho/src/DistrhoPluginLV2export.cpp
+@@ -1203,6 +1203,10 @@
+             if (homepage.isNotEmpty())
+                 pluginString += "        foaf:homepage <" + homepage + "> ;\n";
+ 
++           #ifdef DISTRHO_PLUGIN_MAINTAINER_EMAIL
++            pluginString += "        foaf:mbox <mailto:" DISTRHO_PLUGIN_MAINTAINER_EMAIL "> ;\n";
++           #endif
++
+             pluginString += "    ] ;\n\n";
+         }
+ 

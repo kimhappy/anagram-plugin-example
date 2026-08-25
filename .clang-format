@@ -1,0 +1,151 @@
+# yaml-language-server: $schema=https://json.schemastore.org/clang-format-21.x.json
+
+# Base
+BasedOnStyle: Google
+Language: Cpp
+Standard: c++17
+
+# Indentation
+AccessModifierOffset: -4
+ConstructorInitializerIndentWidth: 4
+ContinuationIndentWidth: 4
+IndentAccessModifiers: false
+IndentCaseBlocks: false
+IndentCaseLabels: false
+IndentExternBlock: NoIndent
+IndentGotoLabels: false
+IndentPPDirectives: AfterHash
+IndentRequiresClause: true
+IndentWidth: 4
+LambdaBodyIndentation: Signature
+NamespaceIndentation: None
+RequiresExpressionIndentation: OuterScope
+TabWidth: 4
+UseTab: Never
+
+# Alignment
+AlignAfterOpenBracket: BlockIndent
+AlignArrayOfStructures: Right
+AlignConsecutiveAssignments:
+  AcrossComments: true
+  AcrossEmptyLines: false
+  AlignCompound: true
+  Enabled: true
+  PadOperators: true
+AlignConsecutiveBitFields:
+  AcrossComments: true
+  AcrossEmptyLines: false
+  Enabled: true
+AlignConsecutiveDeclarations:
+  AcrossComments: true
+  AcrossEmptyLines: false
+  AlignFunctionDeclarations: true
+  AlignFunctionPointers: true
+  Enabled: true
+AlignConsecutiveMacros:
+  AcrossComments: true
+  AcrossEmptyLines: false
+  Enabled: true
+AlignConsecutiveShortCaseStatements:
+  AcrossComments: true
+  AcrossEmptyLines: false
+  Enabled: true
+AlignEscapedNewlines: LeftWithLastLine
+AlignOperands: Align
+AlignTrailingComments:
+  Kind: Always
+  OverEmptyLines: 1
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+AllowBreakBeforeNoexceptSpecifier: Never
+PointerAlignment: Left
+QualifierAlignment: Right
+ReferenceAlignment: Left
+
+# Line Breaking
+AllowShortBlocksOnASingleLine: Empty
+AllowShortCaseLabelsOnASingleLine: false
+AllowShortCompoundRequirementOnASingleLine: true
+AllowShortEnumsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortIfStatementsOnASingleLine: Never
+AllowShortLambdasOnASingleLine: Empty
+AllowShortLoopsOnASingleLine: false
+AllowShortNamespacesOnASingleLine: false
+AlwaysBreakBeforeMultilineStrings: true
+BinPackArguments: false
+BinPackLongBracedList: false
+BinPackParameters: AlwaysOnePerLine
+BreakAdjacentStringLiterals: true
+BreakAfterAttributes: Always
+BreakAfterReturnType: Automatic
+BreakBeforeBinaryOperators: None
+BreakBeforeConceptDeclarations: Always
+BreakBeforeInlineASMColon: Always
+BreakBeforeTernaryOperators: false
+BreakConstructorInitializers: AfterColon
+BreakInheritanceList: AfterColon
+BreakStringLiterals: false
+BreakTemplateDeclarations: Yes
+ColumnLimit: 100
+PackConstructorInitializers: NextLineOnly
+RequiresClausePosition: OwnLine
+
+# Braces
+BreakBeforeBraces: Attach
+CompactNamespaces: false
+Cpp11BracedListStyle: false
+FixNamespaceComments: true
+InsertBraces: true
+
+# Includes
+IncludeBlocks: Regroup
+SortIncludes:
+  Enabled: true
+  IgnoreCase: false
+IncludeCategories:
+  # C++ standard headers
+  - Regex: '^<[[:alnum:]_]+>$'
+    Priority: 1
+  # C standard headers
+  - Regex: '^<(assert|complex|ctype|errno|fenv|float|inttypes|iso646|limits|locale|math|setjmp|signal|stdalign|stdarg|stdatomic|stdbit|stdbool|stdckdint|stddef|stdint|stdio|stdlib|stdnoreturn|string|tgmath|threads|time|uchar|wchar|wctype)\.h>$'
+    Priority: 2
+  # Other angle-bracket headers
+  - Regex: '^<.*>$'
+    Priority: 3
+  # Quoted headers
+  - Regex: '^".*"$'
+    Priority: 4
+SortUsingDeclarations: LexicographicNumeric
+
+# Spacing
+BitFieldColonSpacing: After
+EmptyLineAfterAccessModifier: Never
+EmptyLineBeforeAccessModifier: Always
+SeparateDefinitionBlocks: Always
+SpaceAfterCStyleCast: false
+SpaceAfterLogicalNot: false
+SpaceAfterTemplateKeyword: false
+SpaceBeforeAssignmentOperators: true
+SpaceBeforeCaseColon: false
+SpaceBeforeCpp11BracedList: true
+SpaceBeforeCtorInitializerColon: false
+SpaceBeforeEnumUnderlyingTypeColon: false
+SpaceBeforeInheritanceColon: false
+SpaceBeforeJsonColon: false
+SpaceBeforeParens: ControlStatements
+SpaceBeforeRangeBasedForLoopColon: false
+SpaceBeforeSquareBrackets: false
+SpaceInEmptyBlock: false
+SpacesBeforeTrailingComments: 2
+SpacesInAngles: Always
+SpacesInSquareBrackets: true
+WrapNamespaceBodyWithEmptyLines: Never
+
+# File and Cleanup
+InsertNewlineAtEOF: true
+LineEnding: LF
+ReflowComments: Always
+RemoveParentheses: MultipleParentheses
+RemoveSemicolon: true
+SkipMacroDefinitionBody: false

@@ -1,0 +1,24 @@
+--- a/distrho/src/DistrhoPluginLV2export.cpp
++++ b/distrho/src/DistrhoPluginLV2export.cpp
+@@ -1036,6 +1036,10 @@
+                 pluginString += "    doap:name \"" + name + "\" ;\n";
+         }
+ 
++       #ifdef DISTRHO_PLUGIN_SHORTDESC
++        pluginString += "    doap:shortdesc \"" DISTRHO_PLUGIN_SHORTDESC "\" ;\n";
++       #endif
++
+         // license
+         {
+             const String license(plugin.getLicense());
+@@ -1216,6 +1220,10 @@
+             pluginString += "    ] ;\n\n";
+         }
+ 
++       #ifdef DISTRHO_PLUGIN_LV2_PROJECT
++        pluginString += "    lv2:project <" DISTRHO_PLUGIN_LV2_PROJECT "> ;\n\n";
++       #endif
++
+         {
+             const uint32_t version(plugin.getVersion());
+ 

@@ -1,0 +1,15 @@
+--- a/distrho/src/DistrhoPluginLV2export.cpp
++++ b/distrho/src/DistrhoPluginLV2export.cpp
+@@ -795,6 +795,12 @@
+ 
+                     pluginString += "        lv2:symbol \"" + symbol + "\" ;\n";
+ 
++                   #ifdef DISTRHO_PLUGIN_ANAGRAM_QUICK_POT
++                    // Darkglass Anagram: the parameter that the pot under the block adjusts
++                    if (symbol == DISTRHO_PLUGIN_ANAGRAM_QUICK_POT)
++                        pluginString += "        lv2:designation dg:quickPot ;\n";
++                   #endif
++
+                     // short name
+                     const String& shortName(plugin.getParameterShortName(i));
+ 
